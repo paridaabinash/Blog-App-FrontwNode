@@ -674,11 +674,144 @@
 
 @media (max-width: 375px){
 
+    
+/* Individual Page ------------------ */
+
+    .indpage {
+        width: 90%;
+    }
+
+    .indtitle {
+        font-size: 20px;
+        
+    }
+    .induserimg {
+        width: 30%;
+        height: auto;
+    }
+    .indimgandname {
+        width: 70%;
+    }
+    .icons-social {
+        color: white;
+        font-size: 16px;
+        display: flex;
+        gap: 5px;
+    }
+    .indauthor {
+        font-size: 14px;
+    }
+    .indpublishdate {
+        font-size: 10px;
+    }
+    .inddescription{
+        font-size: 15px;
+    }
+
+/* Navbar ------------------------------------------------------------------------------------- */
+
+
+    .navlogoTHE {
+        font-size: 25px;
+    }
+
+    .navlogoSIREN {
+        font-size: 55px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navlink {
+        font-size: 11px;
+    }
+
+
+/* All Page CSS --------------------- */
+        
+    .allcardgrid {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+
+    }
+
+    .allcardpage {
+        width: 60%;
+    }
+
+    .allcard {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .allcard img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .alltextflex p {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .alltextflex div {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .alltextflex span {
+        font-size: 10px;
+    }
+
+    .allcardheading {
+        font-size: 25px;
+    }
+    .allcardparent {
+        gap: 20px;
+    }
+
+/* Top Post Side CSS ----------------------- */
+
+    .toppostcontainer {
+        display: none;
+    }
+
+
+
+
+/* Home Page Bollywood CSS -------------------- */
+
+
+    .trendcard, .bollycard {
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .trendcard p, .bollycard p {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .trendcard span, .bollycard span {
+        font-size: 13px;
+    }
+
+    .bollyparent {
+        width: 90vw;
+        margin: auto;
+    }
 
     .bollycardparent {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 60%;
+        grid-template-columns: 1fr;
+        width: 90vw;
+        gap: 10px;
     }
     
     .bollyheading {
@@ -688,7 +821,83 @@
     .bollycard img {
         height: auto;
     }
+
+/* Home Page Trending CSS --------------------- */
+
+    .trendcardparent {
+        display: grid;
+        height: 1300px;
+        width: 90vw;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
     
+
+    #c0{
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+    }
+    
+    #c0 p {
+        font-size: 14px;
+        width: 90%;
+        position: absolute;
+        top: 180px;
+    }
+    
+    #c0 span {
+        font-size: 13px;
+        position: absolute;
+        top: 220px;
+        left: 170px;
+    }
+    
+    #c1{
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        top: 440px;
+        left: 25px;
+    
+    }
+    
+    #c2{
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        top: 680px;
+        left: 25px;
+    }
+    
+    #c3{
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        top: 920px;
+        left: 25px;
+    
+    }
+    
+    #c4{
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        top: 1160px;
+        left: 25px;
+    }
+    
+
+
+
+
+
+
 
 
 }
