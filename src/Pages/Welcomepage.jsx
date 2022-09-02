@@ -33,7 +33,7 @@ const Welcomepage = () => {
                     <Link style={{textDecoration: 'none'}} to='/home'><div className='scrolldown'><span className='downemoji'>👊🏻</span> Let's Dive in.</div></Link>
                     
                 </div>
-                <div className='lottie'><img src={breakingnews} width={400} height={400} /></div>
+                <div className='lottie'><img src={breakingnews} alt='no img' width={400} height={400} /></div>
 
             </div>
 
