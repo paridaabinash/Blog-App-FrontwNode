@@ -26,7 +26,7 @@ function App() {
             <Route path='/technology' element={<Technology />} />
             <Route path='/fitness' element={<Fitness />} />
             <Route path='/food' element={<Food />} />
-            <Route path=":category/:articleid" element = {<IndividualCardPage/>}/>
+            <Route path=":category/:id" element = {<IndividualCardPage/>}/>
           </Routes>
         </div>
       </BrowserRouter>

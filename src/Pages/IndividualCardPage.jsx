@@ -6,7 +6,7 @@ import userimg from '../Assets/userimg.png';
 const IndividualCardPage = () => {
 
     const location = useLocation();
-    const { title, img, content, publishdate, author, url } = location.state;
+    const { title, img, content, publishdate, author } = location.state;
 
     return (
         <div className='indpage'>

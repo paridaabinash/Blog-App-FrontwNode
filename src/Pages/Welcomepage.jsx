@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Lottie from 'react-lottie';
-import breakingnews from '../Assets/breaking-news-broadcast-animation.json';
+// import Lottie from 'react-lottie';
+// import breakingnews from '../Assets/breaking-news-broadcast-animation.json';
 import '../style.css';
 
 const Welcomepage = () => {
 
 
 
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: breakingnews,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      };
+    // const defaultOptions = {
+    //     loop: true,
+    //     autoplay: true,
+    //     animationData: breakingnews,
+    //     rendererSettings: {
+    //       preserveAspectRatio: "xMidYMid slice"
+    //     }
+    //   };
 
     return (
         <div>
@@ -33,7 +33,7 @@ const Welcomepage = () => {
                     <Link style={{textDecoration: 'none'}} to='/home'><div className='scrolldown'><span className='downemoji'>👊🏻</span> Let's Dive in.</div></Link>
                     
                 </div>
-                <div className='lottie'><Lottie options={defaultOptions} width={400} height={400} /></div>
+                {/* <div className='lottie'><Lottie options={defaultOptions} width={400} height={400} /></div> */}
 
             </div>
 

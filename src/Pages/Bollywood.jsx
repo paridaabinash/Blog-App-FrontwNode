@@ -1,6 +1,5 @@
 import React from 'react';
 import { bollywoodData } from '../Assets/bollywoodData';
-import { trendData } from '../Assets/trendData';
 import Allcard from '../Components/Allcard';
 import { dateConvert } from '../Components/Dateconvert';
 

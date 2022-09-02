@@ -16,16 +16,18 @@ export function dateConvert(cardname) {
         var year = date.getFullYear();
         var month = toMonthName(date.getMonth() + 1);
 
-        var hour = date.getHours();
-        var min = date.getMinutes();
-        var sec = date.getSeconds();
+        // var hour = date.getHours();
+        // var min = date.getMinutes();
+        // var sec = date.getSeconds();
 
-        console.log(hour, min, sec);
+        // console.log(hour, min, sec);
 
 
         var dateStr = `${month} ${day}, ${year}`;
         // | ${hour}:${min}:${sec}
         ele.publishedAt = dateStr;
+
+        return ele.publishedAt;
 
     })
 }
