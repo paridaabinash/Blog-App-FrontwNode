@@ -1,15 +1,22 @@
-import React from 'react';
-import { bollywoodData } from '../Assets/bollywoodData';
+import React, {useState, useEffect} from 'react';
 import Allcard from '../Components/Allcard';
+import axios from 'axios';
 import { dateConvert } from '../Components/Dateconvert';
+
 
 const Bollywood = () => {
 
+  const [bollywoodData, setDetails] = useState([]);
+
+  useEffect(()=>{
+    const getData = async()=>{
+        const data=await axios.get('https://blog-app-serverside.herokuapp.com/api/bolly');
+        setDetails(data.data);
+    }
+    getData();
+  }, []);
 
   dateConvert(bollywoodData);
-
-
-  // const slicedbollywoodData = bollywoodData.slice(0, 40);
 
   return (
 

@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { dateConvert } from '../Components/Dateconvert';
-import { trendData } from '../Assets/trendData';
-import { bollywoodData } from '../Assets/bollywoodData';
+import axios from 'axios';
 
-function App() {
+function Home() {
 
+
+  
+const [bollywoodData, setDetails] = useState([]);
+const [trendData, setTrendData] = useState([]);
+
+
+  useEffect(()=>{
+    const getData = async()=>{
+        const data=await axios.get('https://blog-app-serverside.herokuapp.com/api/trend');
+        setTrendData(data.data);
+    }
+    getData();
+  }, []);
+
+  useEffect(()=>{
+    const getData = async()=>{
+        const data=await axios.get('https://blog-app-serverside.herokuapp.com/api/bolly');
+        setDetails(data.data);
+    }
+    getData();
+  }, []);
 
   dateConvert(trendData);
   dateConvert(bollywoodData);
@@ -65,4 +85,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

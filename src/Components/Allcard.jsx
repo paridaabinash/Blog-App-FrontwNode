@@ -1,8 +1,21 @@
-import React from 'react';
-import { trendData } from '../Assets/trendData';
+import React, { useEffect, useState } from 'react';
+// import trendData from '../Assets/trendData';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 const Allcard = ({ heading, page }) => {
+
+  const [trendData, setTrendData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await axios.get('https://blog-app-serverside.herokuapp.com/api/trend');
+      setTrendData(data.data);
+    }
+    getData();
+    
+  }, []);
+
 
   return (
     <>

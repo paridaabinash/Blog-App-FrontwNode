@@ -1,21 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Lottie from 'lottie-react';
 import breakingnews from '../Assets/animation_640_l7klw457.gif';
 import '../style.css';
 
+
 const Welcomepage = () => {
+    
 
-
-
-    // const defaultOptions = {
-    //     loop: true,
-    //     autoplay: true,
-    //     animationData: breakingnews,
-    //     rendererSettings: {
-    //       preserveAspectRatio: "xMidYMid slice"
-    //     }
-    //   };
 
     return (
         <div>
